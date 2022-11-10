@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*Estilizações GLOBAIS*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, #402758, #300844);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilização do HEADER */
+
+.header {
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: bold;
+    background-image: linear-gradient(to left, #D794D7, #A395F7, #6FBFDD);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+/* Estilização do TÍTULO */
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+}
+
+.sublinhado {
+    --cor: rgba(255, 255, 255, 0.1);
+    --transp: rgba(-0, 0, 0, 0);
+    background: var(--cor);
+    background: linear-gradient(180deg, var(--transp) 0%, var(--transp)0%, var(--cor)80%);
+    border-radius: 5px;
+}
+
+/* Estilização da TABLE*/
+
+.area-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+table,
+th,
+td {
+    border: 0.5px dotted #ffff;
+    border-collapse: collapse;
+
+}
+
+th,
+td::selection {
+    background-color: #ff067a;
+}
+
+th,
+td {
+    padding: 15px;
+    color: #fff;
+}
+
+tr {
+    font-weight: 400;
+}
+
+th {
+    font-weight: 600;
+    background-color: rgba(163, 149, 247, 0.33);
+}
+
+
+.table-dados tr:nth-of-type(even) {
+    background-color: rgba(255, 255, 255, 0.13);
+}
+
+/* Estilização do BOTÃO */
+
+.btn-sair {
+    display: flex;
+    justify-content: right;
+    margin: 16px;
+}
+
+.btn-sair>button {
+    background-image: url(../images/icon_exit.png);
+    padding: 20px;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}

@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Estilizações GLOBAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, #402758, #300844);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilização do HEADER */
+
+.header {
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: bold;
+    background-image: linear-gradient(to left, #D794D7, #A395F7, #6FBFDD);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+/* Estilização da area MAIN */
+
+.main {
+    width: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Estilização da área left */
+
+.area-left {
+    width: 30vw;
+    display: flex;
+    align-items: center;
+}
+
+.area-left>img {
+    max-width: 100%;
+}
+
+/* Estilização da área RIGHT */
+
+.right-area {
+    width: 55vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 3rem;
+}
+
+.title>h1 {
+    color: #fff;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.title h1::after {
+    content: '';
+    display: block;
+    width: 10rem;
+    height: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 5px;
+}
+
+label {
+    color: #fff;
+}
+
+.input-group {
+    margin-top: -30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 3rem;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(163, 149, 247, 0.33);
+    color: #fff;
+    font-size: 1em;
+}
+
+.input-box input:focus-visible {
+    outline: 2px solid #300844;
+}
+
+/* Estilização da área BTN */
+
+.area-btn {
+    margin-left: 200px;
+    margin-top: 15px;
+}
+
+.cadastrar-btn {
+    text-decoration: none;
+    border-style: none;
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #ffff;
+    background-image: linear-gradient(to right, #D994D6, #A395F7);
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: ease 300ms;
+}
+
+.cadastrar-btn:hover {
+    background-image: linear-gradient(to left, #D994D6, #A395F7);
+    color: #300844;
+
+}

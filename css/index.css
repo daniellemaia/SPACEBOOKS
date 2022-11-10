@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Estilizações GLOBAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, #402758, #300844);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilização do HEADER */
+
+.header {
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: bold;
+    background-image: linear-gradient(to left, #D794D7, #A395F7, #6FBFDD);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+.atalhos {
+    width: 440px;
+    display: inline-flex;
+    justify-content: space-between;
+
+}
+
+.btn-atalho {
+    text-decoration: none;
+    border-style: none;
+    width: 200px;
+    height: 48px;
+    border-radius: 15px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+/* Estilização da ÁREA PRINCIPAL*/
+
+.main {
+    display: flex;
+}
+
+/* Estilização da ÁREA-LEFT*/
+
+.area-left {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5em;
+    margin-top: -30px;
+}
+
+.text1 {
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 3em;
+    color: #FFF;
+}
+
+.text2 {
+    font-weight: bold;
+    font-size: 3.8em;
+    color: #fff;
+}
+
+.txt-sublinhado {
+    --cor: rgba(255, 255, 255, 0.1);
+    --transp: rgba(-0, 0, 0, 0);
+    background: var(--cor);
+    background: linear-gradient(180deg, var(--transp) 0%, var(--transp)0%, var(--cor)80%);
+    border-radius: 5px;
+}
+
+.subtitle {
+    margin-top: -30px;
+    font-weight: 300;
+    font-size: 1.2em;
+    color: #FFF;
+}
+
+.buttons {
+    display: flex;
+    width: 450px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn-main {
+    margin-top: -50px;
+    text-decoration: none;
+    border-style: none;
+    width: 190px;
+    height: 50px;
+    border-radius: 15px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #ffff;
+    background-image: linear-gradient(to right, #D994D6, #A395F7);
+    cursor: pointer;
+    transform: ease 300ms;
+}
+
+.btn-main:hover {
+    background-image: linear-gradient(to left, #D994D6, #A395F7);
+    color: #300844;
+
+}
+
+/*Estilização da AREA-RIGHT  */
+
+.area-right {
+    width: 50vw;
+    height: 50vw;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-img {
+    width: 83%;
+}

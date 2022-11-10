@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastre-se</title>
+
+    <!-- Importações -->
+    <link rel="shortcut icon" type="image/x-icon" href="../images/space-icon.ico">
+    <link rel="stylesheet" href="../css/cadastro.css ">
+
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1 class="logo" Onclick="location.href='index.html'">SPACEBOOKS</h1>
+    </header>
+
+    <!-- Div main -->
+    <div class="main">
+        <div class="area-left">
+            <img src="../images/rocket.png  " alt="">
+        </div>
+
+    <!-- Div right -->
+    <div class="right-area">
+        
+        <form action="../php/cadastro.php" method="post" class="area-cadastro">
+
+            <div class="title">
+                <h1>Cadastre-se</h1>
+            </div>
+
+        <!-- Input group  -->
+        <div class="input-group">
+
+            <div class="input-box">
+                <label for="nome">Nome</label>
+                <input class="nome" id="nome" type="text" name="nome" required>
+            </div>
+
+            <div class="input-box">
+                <label for="cpf">CPF</label>
+                <input class="cpf" id="cpf" type="text" name="cpf" required>
+            </div>
+
+            <div class="input-box">
+                <label for="Endereço">Endereço</label>
+                <input class="endereco" id="endereco" type="text" name="endereco" required>
+            </div>
+
+            <div class="input-box">
+                <label for="cep">CEP</label>
+                <input class="cep" id="cep" type="number" name="cep" required>
+            </div>
+
+            <div class="input-box">
+            <label for="telefone">Telefone</label>
+            <input class="telefone" id="telefone" type="number" name="telefone" required> 
+            </div>
+
+            <div class="input-box">
+                <label for="email">E-mail</label>
+                <input class="email" id="email" type="email" name="email" required>
+            </div>
+
+            <!-- Botão cadastrar -->
+            <div class="area-btn">
+                <button type="submit" class="cadastrar-btn" id="cadastrar">Cadastrar</button>
+            </div>
+        </div> 
+    </div>
+    </form> 
+    </div> 
+</body>
+</html>
